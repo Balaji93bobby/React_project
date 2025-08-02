@@ -1,0 +1,31 @@
+button:hover{
+    opacity: 70%;
+    background-color: red;
+    padding: 5px;
+}
+
+button{
+    transition: 400ms;
+}
+p.paragraph-1::before{
+    content: "Hey My name is";
+    background-color: red;
+    margin: 10px;
+}
+
+#indhu::after{
+    content: " mba";
+}
+
+#animation{
+    transform: translateY(16px);
+    animation: pointdown 1000ms infinite alternate-reverse;
+}
+@keyframes pointdown{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(16px);
+    }
+}
