@@ -1,6 +1,13 @@
-.title{
+.parent{
+    height: 200px;
     background-color: red;
     position: relative;
-    top: 50px;
-    left: 30px;
+}
+.child{
+    height: 64px;
+    width: 64px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
