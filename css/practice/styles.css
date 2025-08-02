@@ -1,15 +1,8 @@
-.paragraph-1{
-    color: red !important;
-}
-.paragraph-1.red{
-    color: blueviolet;
-}
-p.paragraph-1{
-    color: chocolate;
-}
-p{
-    color: greenyellow;
-}
-#p2{
-    color: blue;
+.box{
+    width: 200px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 30px 25px;
+    
 }
