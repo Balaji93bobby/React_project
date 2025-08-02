@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap');
 /* #h1 {
     color: rgb(255,0,0);
     font-size: 48px;
@@ -11,8 +12,16 @@
 } */
 
 #div1{
+    /* wifht and height */
     width: 100%;
     max-width: 300px;
     height: 100vh;
+
+    /* background color */
     background-color: red;
+
+    /* fonts */
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Inter, sans-serif, Arial, Helvetica, sans-serif;
 }
