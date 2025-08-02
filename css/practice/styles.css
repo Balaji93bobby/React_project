@@ -1,4 +1,11 @@
-h1 {
-    color: purple;
+#h1 {
+    color: rgb(255,0,0);
     font-size: 48px;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+#h2{
+    color: black;
+    font-size: 90px;
+    background-color: #ff0000;
 }
