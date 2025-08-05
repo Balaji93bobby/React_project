@@ -1,0 +1,11 @@
+useState is used to create variables in react
+
+conditional redndering - Rendering an element based on the condition is true or false
+
+useState example
+
+const [state, setState] = useState(false)
+
+state is the variable that we use which has the default value passed in the useState 
+
+setState is the function which we can use to change th evalues fo the state variable y passing the vlaue as parameters int he settate funtions

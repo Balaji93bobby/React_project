@@ -5,8 +5,12 @@ import './App.css'
 import Todo from './components/Todo'
 import TodoTitle from './components/TodoTitle'
 import Popup from './components/Popup'
+// import { useState } from 'react'
 
 function App() {
+  const [popupOpen, setPopupOpen] = useState(false)
+
+
   return (
     <>
     <TodoTitle/>
@@ -14,14 +18,14 @@ function App() {
       <input type="text" onChange={(event) => {
           console.log(event.target.value)
       }}/>
-      <button>Add To Do</button>
+      <button onClick={() => setPopupOpen(true)}>Add To Do</button>
     </div>
     <Todo 
     task='Learn React' 
     // description='Code Along and Take Notes'
     />
     <Todo 
-    task='Finish ASAP forntend'
+    task='Finish ASAP frontend'
     // description='3 Hours Everyday'
     />
     <Todo 
@@ -32,7 +36,7 @@ function App() {
     task='Earn 10 LPA'
     // description='Live life and relax'
     />
-    <Popup message='Are you 100% sure?'/>
+    {popupOpen && <Popup message='Are you 100% sure?'/> }
     </>
   )
 }
