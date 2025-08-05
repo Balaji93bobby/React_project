@@ -25,7 +25,7 @@ function App() {
     task='Earn 10 LPA'
     description='Live life and relax'
     />
-    <Popup message='Are you 100% sure?'/>
+    {/* <Popup message='Are you 100% sure?'/> */}
     </>
   )
 }
