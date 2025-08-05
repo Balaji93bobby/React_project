@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './components/Todo'
 import TodoTitle from './components/TodoTitle'
+import Popup from './components/Popup'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Todo />
     <Todo />
     <Todo />
+    <Popup />
     </>
   )
 }
