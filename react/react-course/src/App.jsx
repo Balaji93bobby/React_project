@@ -4,17 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>Asap frontend is the best</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptate eaque ad impedit soluta quisquam.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptate eaque ad impedit soluta quisquam.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptate eaque ad impedit soluta quisquam.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptate eaque ad impedit soluta quisquam.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptate eaque ad impedit soluta quisquam.</p>
+    <h1>My Todo List</h1>
+    <div>
+      <h2>Finish React Crash Course</h2>
+      <button>Delete</button>
+    </div>
+    <div>
+      <h2>Finish ASAP Frontend Course</h2>
+      <button>Delete</button>
+    </div>
+    <div>
+      <h2>Land a Job</h2>
+      <button>Delete</button>
+    </div>
+    <div>
+      <h2>Earn 10 LPA</h2>
+      <button>Delete</button>
+    </div>
     </>
   )
 }
