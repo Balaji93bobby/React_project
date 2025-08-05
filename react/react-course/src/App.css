@@ -48,3 +48,48 @@
   top: 0;
   left: 0;
 }
+
+.counter__title{
+  color: red;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.count{
+  color: black;
+  font-size: 48px;
+}
+
+.increment__btn{
+
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  border: 1px solid #09a9dc;
+  margin: 4px;
+}
+
+.decrement__btn{
+
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  border: 1px solid #09a9dc;
+  margin: 4px;
+
+}
+
+.reset__btn{
+
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  border: 1px solid #09a9dc;
+  margin: 4px;
+}
