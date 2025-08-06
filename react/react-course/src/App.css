@@ -1,7 +1,50 @@
 .todo-item{
   padding: 16px;
+  text-align: center;
   border: 1px solid blue;
   margin: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  padding-top: 10px;
+  margin: 0; /* Offset for the fixed title bar */
+}
+
+.input{
+  padding: 5px;
+  /* align-items: center; */
+  /* text-align: center; */
+  margin: 10px auto;
+  display: block;
+}
+
+.addTodo__btn{
+  text-align: center;
+  margin: 0 auto;
+  color: aqua;
+  background-color: black;
+  display: block;
+}
+
+.todo__title{
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+  margin: 5px;
+  border: 2px solid black;
+  z-index: 1000;
 }
 
 .popup {

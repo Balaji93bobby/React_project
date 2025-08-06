@@ -32,10 +32,10 @@ function App() {
     <>
     <TodoTitle/>
     <div>
-      <input type="text" onChange={(event) => {
+      <input className='input' type="text" onChange={(event) => {
           console.log(event.target.value)
       }}/>
-      <button onClick={() => setPopupOpen(true)}>Add To Do</button>
+      <button className='addTodo__btn' onClick={() => setPopupOpen(true)}>Add To Do</button>
     </div>
     <Todo 
     task='Learn React' togglePopup={togglePopup} 
