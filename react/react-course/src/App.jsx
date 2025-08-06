@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Todo from './components/Todo'
 import TodoTitle from './components/TodoTitle'
@@ -15,6 +15,17 @@ function App() {
   function cancelPopup(){
     setPopupOpen(false)
   }
+  useEffect (() =>{
+    console.log('only when the component loads')
+  }, [])
+
+  useEffect(() => {
+    console.log(`component mounted and when popupOpen changes to ${popupOpen}`)
+  }, [popupOpen])
+
+  useEffect(() => {
+    console.log('on every render')
+  })
 
 
   return (

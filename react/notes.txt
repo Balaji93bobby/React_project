@@ -45,3 +45,36 @@ setObject(prevObject => ({...prevObject, age: prevObject.age+1}))
 array:
 setArray(newArray)
 setArray(prevArray) => ({...prevArray, +1})
+
+
+
+-----------------------------------------------------------------------
+
+useEffect hook
+
+useEffectHook is needed to run a function or script when the page is loaded/rendered, example fetch some data and keep it preloaded
+
+syntax of useEffect
+
+useEffect(() => {
+    function
+, []})
+
+useEffect need two arguments one is a callback function and another is a dependency array
+
+we can pass the useState props inside the dependency array so the use useEffect will run whenever there is a change in any of the useState props passed in the dependency array
+
+useEffect examples and syntax:
+1- passing an empty array as a second argument in the callbackfuntion will run the function in the useEffect 
+    when the component in which the useEffect is rendered
+  useEffect (() =>{
+    console.log('only when the component loads')
+  }, [])
+2. passing props in the second array will run the function in th euseEffect only when there is a change in the prop passedd int he array
+  useEffect(() => {
+    console.log(`component mounted and when popupOpen changes to ${popupOpen}`)
+  }, [popupOpen])
+3. if no array is passedd as an second argument , then the function will run when eery if there is any rendering for any component
+  useEffect(() => {
+    console.log('on every render')
+  })
