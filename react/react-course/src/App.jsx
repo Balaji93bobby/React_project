@@ -14,8 +14,7 @@ function App() {
 
   return (
     <>
-    <Counter/>
-    {/* <TodoTitle/>
+    <TodoTitle/>
     <div>
       <input type="text" onChange={(event) => {
           console.log(event.target.value)
@@ -38,7 +37,7 @@ function App() {
     task='Earn 10 LPA'
     // description='Live life and relax'
     />
-    {popupOpen && <Popup message='Are you 100% sure?'/> } */}
+    {popupOpen && <Popup message='Are you 100% sure?'/> }
     </>
   )
 }

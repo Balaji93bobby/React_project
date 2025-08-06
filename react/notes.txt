@@ -24,3 +24,24 @@ onClick={() => {
                 age: prevuser.age + 1,
             }));
         }}
+
+useState example with diffeent datatypes:
+
+string : 
+setString('string)
+setString(prevString => prevString + 'newString')
+
+number : 
+setNumber(number)
+setNumber(prevNumber => prevNumber + 1)
+
+boolean - setBoolean(false)
+setBoolean(prevBoolean => !prevBoolean)
+
+object :
+setObject(newObject)
+setObject(prevObject => ({...prevObject, age: prevObject.age+1}))
+
+array:
+setArray(newArray)
+setArray(prevArray) => ({...prevArray, +1})
