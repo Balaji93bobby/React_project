@@ -9,3 +9,18 @@ const [state, setState] = useState(false)
 state is the variable that we use which has the default value passed in the useState 
 
 setState is the function which we can use to change th evalues fo the state variable y passing the vlaue as parameters int he settate funtions
+
+using objects ion useState
+1- use a callbackfunction within setState to access the previous value in the object
+2- spread all the properties of prev object into the new object
+3- Change the property that you want to change in the object using its key
+
+in this process all the data in the object will be sporead in prevobject and then you can set the data in it using its kjey
+
+
+onClick={() => {
+            setUser((prevuser) => ({
+                ...prevuser,
+                age: prevuser.age + 1,
+            }));
+        }}
