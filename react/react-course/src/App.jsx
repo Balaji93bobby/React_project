@@ -1,61 +1,26 @@
-import { useState, useEffect } from 'react'
 import './App.css'
-import Todo from './components/Todo'
-import TodoTitle from './components/TodoTitle'
-import Popup from './components/Popup'
-import Counter from './components/Counter'
-// import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Posts from './pages/Posts';
+import Nav from './components/Nav';
+
 
 function App() {
-  const [popupOpen, setPopupOpen] = useState(false)
-  function togglePopup(){
-    setPopupOpen(true)
-    console.log('parent Notified')
-  }
-  function cancelPopup(){
-    setPopupOpen(false)
-  }
-  useEffect (() =>{
-    console.log('only when the component loads')
-  }, [])
-
-  useEffect(() => {
-    console.log(`component mounted and when popupOpen changes to ${popupOpen}`)
-  }, [popupOpen])
-
-  useEffect(() => {
-    console.log('on every render')
-  })
-
-
   return (
-    <>
-    <TodoTitle/>
-    <div>
-      <input className='input' type="text" onChange={(event) => {
-          console.log(event.target.value)
-      }}/>
-      <button className='addTodo__btn' onClick={() => setPopupOpen(true)}>Add To Do</button>
-    </div>
-    <Todo 
-    task='Learn React' togglePopup={togglePopup} 
-    // description='Code Along and Take Notes'
-    />
-    <Todo 
-    task='Finish ASAP frontend' togglePopup={togglePopup}
-    // description='3 Hours Everyday'
-    />
-    <Todo 
-    task='Land a job' togglePopup={togglePopup}
-    // description='Apply to jobs everyday'
-    />
-    <Todo 
-    task='Earn 10 LPA' togglePopup={togglePopup}
-    // description='Live life and relax'
-    />
-    {popupOpen && <Popup message='Are you 100% sure?' cancelPopup={ cancelPopup }/> }
-    </>
-  )
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/contact' element={<Contact />}/>
+        <Route path='/posts' element={<Posts />}/>
+      </Routes>
+      <div></div>
+    </Router>
+  
+  );
 }
 
 export default App

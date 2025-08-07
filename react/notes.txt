@@ -78,3 +78,14 @@ useEffect examples and syntax:
   useEffect(() => {
     console.log('on every render')
   })
+
+
+React Router:
+
+React Router is used to handle the routing in react,
+
+Browser Router as ROuter, Routes , Route and link are used for this.
+
+Route is used inside routes to create a path for a component
+
+and link can be used as an alternative for a tag to seamlessly setich between apges without reloading the browser. we can use Link in a compinent as well
