@@ -25,6 +25,14 @@ body {
   display: block;
 }
 
+.navbar{
+  color: red;
+  margin: 16px;
+  padding: 16px;
+  
+
+}
+
 .addTodo__btn{
   text-align: center;
   margin: 0 auto;

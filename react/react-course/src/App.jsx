@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Posts from './pages/Posts';
 import Nav from './components/Nav';
+import Users from './pages/Users';
 
 
 function App() {
@@ -13,9 +14,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/posts' element={<Posts />}/>
+        <Route path='/users/:username' element={<Users/>}/>
       </Routes>
       <div></div>
     </Router>
